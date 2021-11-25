@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <link rel="stylesheet"
+          href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css">
+    <meta charset="UTF-8">
+    <title>Angular</title>
+</head>
+<body>
+<div ng-controller="myCtrl">
+    {{smth}}
+    <div ng-controller="myCtrl1">
+        <button ng-click="showSmth()">Show</button>
+        <input type="text" ng-model="hello">
+        {{hello}}
+        <br/>
+        {{myFactory.helloWorld}}
+    </div>
+    <div ng-controller="myCtrl2">
+        {{smth}}
+        <input type="text" ng-model="world">
+        {{world}}
+        {{getBookMark()}}
+        <br/>
+        {{myFactory.helloWorld}}
+        <br/>
+        ********************************
+        <button ng-click="setWorld('Earth')">press</button>
+    </div>
+</div>
+<script src="app.js"></script>
+<h1>Hello, AngularJS!</h1>
+<input type="text" ng-model="name" placeholder="your name">
+<br/>
+{{name}}
+{{45 + 435}}
+</body>
+</html>
