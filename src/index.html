@@ -23,7 +23,7 @@
         {{world}}
         {{getBookMark()}}
         <br/>
-        {{myFactory.helloWorld}}
+        {{myFactory.helloWorld | myFilter}}
         <br/>
         ********************************
         <button ng-click="setWorld('Earth')">press</button>
@@ -35,5 +35,8 @@
 <br/>
 {{name}}
 {{45 + 435}}
+<my-directive>
+    This text in directive
+</my-directive>
 </body>
 </html>
